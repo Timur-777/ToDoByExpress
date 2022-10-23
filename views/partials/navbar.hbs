@@ -1,0 +1,22 @@
+<nav class="brown">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center">ToDo-List</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      {{#if isIndex}}
+        <li class="active"><a href="/">Home</a></li>
+      {{else}}
+        <li><a href="/">Home</a></li>
+      {{/if}}
+      {{#if isCreate}}
+        <li class="active"><a href="/create">Create Task</a></li>
+      {{else}}
+        <li><a href="/create">Create Task</a></li>
+      {{/if}}
+      {{#if isTasks}}
+        <li class="active"><a href="/tasks">Tasks</a></li>
+      {{else}}
+        <li><a href="/tasks">Tasks</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
